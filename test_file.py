@@ -5,7 +5,7 @@ class TestWebsiteLoading(unittest.TestCase):
 
     def test_website_loading(self):
         url = 'https://atg.world'
-        print(f"Connecting to {url}...")
+        print("Connecting to {}...".format(url))
         try:
             response = requests.get(url)
             self.assertEqual(response.status_code, 200)
